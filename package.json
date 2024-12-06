@@ -3,6 +3,6 @@
     "express": "^4.21.1"
   },
   "scripts": {
-    "build": "your-build-command-here"
+    "build": "react-scripts build"
   }
 }
