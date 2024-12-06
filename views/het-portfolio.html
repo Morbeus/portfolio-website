@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetansh Mehta - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: {
+                            green: '#B6D36C',
+                            orange: '#FFA500',
+                            blue: '#7DD1D1',
+                            gray: '#CCCCCC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 w-full bg-white z-50 px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <div class="w-8 h-8 bg-[#7DD1D1] rounded-full"></div>
+            <div>
+                <h1 class="font-bold text-mocha-mousse">Hetansh Mehta</h1>
+                <p class="text-sm text-mocha-mousse">Data Scientist</p>
+            </div>
+        </div>
+        <nav class="flex gap-8">
+            <a href="#resume" class="text-mocha-mousse hover:text-[#7DD1D1]">Resume</a>
+            <a href="#research" class="text-mocha-mousse hover:text-[#7DD1D1]">Research</a>
+            <a href="#outreach" class="text-mocha-mousse hover:text-[#7DD1D1]">Outreach</a>
+            <a href="#personal" class="text-mocha-mousse hover:text-[#7DD1D1]">Personal</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 px-16 max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 gap-16 items-center mb-16">
+            <!-- Profile Image -->
+            <div class="aspect-square rounded-full overflow-hidden">
+                <img src="/images/hetansh_image.jpeg" alt="Hetansh Mehta" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Introduction -->
+            <div>
+                <h1 class="text-6xl font-bold mb-8 text-mocha-mousse">Hetansh Mehta</h1>
+                <h2 class="text-2xl font-semibold mb-4 text-mocha-mousse">A Bit About Me</h2>
+                <p class="text-mocha-mousse leading-relaxed">
+                    I am a Data Scientist with over 3 years of experience, specializing in AI and machine learning solutions. 
+                    My expertise includes developing RAG-based chatbots, implementing recommendation systems, and building 
+                    robust data pipelines. I'm passionate about leveraging AI to solve complex business problems and create 
+                    innovative solutions.
+                </p>
+            </div>
+        </div>
+
+        <!-- Navigation Circles -->
+        <div class="flex justify-center gap-8 mt-16">
+            <a href="#resume" class="group">
+                <div class="w-32 h-32 rounded-full bg-[#B6D36C] flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-white font-semibold">Resume</span>
+                </div>
+            </a>
+            <a href="#research" class="group">
+                <div class="w-32 h-32 rounded-full bg-[#FFA500] flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-white font-semibold">Research</span>
+                </div>
+            </a>
+            <a href="#outreach" class="group">
+                <div class="w-32 h-32 rounded-full bg-[#7DD1D1] flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-white font-semibold">Outreach</span>
+                </div>
+            </a>
+            <a href="#personal" class="group">
+                <div class="w-32 h-32 rounded-full bg-[#CCCCCC] flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-white font-semibold">Personal</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Resume Section -->
+        <section id="resume" class="mt-32 max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-mocha-mousse">Professional Experience</h2>
+            
+            <!-- Role Overview -->
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-12">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 class="text-2xl font-semibold text-mocha-mousse">Data Scientist</h3>
+                    <span class="text-mocha-mousse inline-block px-4 py-1 bg-cream rounded-full">3+ Years Experience</span>
+                </div>
+                
+                <!-- Key Strengths -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-mocha-mousse mb-4">Key Strengths</h4>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="w-32 font-semibold text-mocha-mousse">AI Expertise</div>
+                            <div class="text-mocha-mousse">Developed innovative AI solutions, including a RAG-based chatbot and sentiment analysis pipelines.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-32 font-semibold text-mocha-mousse">Programming</div>
+                            <div class="text-mocha-mousse">Python, Java, Kotlin, TensorFlow, and PyTorch.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Highlights -->
+                <div>
+                    <h4 class="text-xl font-semibold text-mocha-mousse mb-4">Experience Highlights</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <div class="w-2 h-2 mt-2 rounded-full bg-mocha-mousse flex-shrink-0"></div>
+                            <span class="text-mocha-mousse">Built a ChatCSV app for enhanced analytics.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <div class="w-2 h-2 mt-2 rounded-full bg-mocha-mousse flex-shrink-0"></div>
+                            <span class="text-mocha-mousse">Implemented recommendation systems and robust data pipelines.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <div class="w-2 h-2 mt-2 rounded-full bg-mocha-mousse flex-shrink-0"></div>
+                            <span class="text-mocha-mousse">Optimized multiple endpoints, significantly improving performance metrics.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Technical Skills -->
+                <div class="bg-white shadow-lg rounded-lg p-8">
+                    <h4 class="text-xl font-semibold text-mocha-mousse mb-6">Technical Skills</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Python</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Java</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Kotlin</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">TensorFlow</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">PyTorch</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">RAG</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">ML Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- Areas of Expertise -->
+                <div class="bg-white shadow-lg rounded-lg p-8">
+                    <h4 class="text-xl font-semibold text-mocha-mousse mb-6">Areas of Expertise</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">AI Solutions</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Chatbot Development</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Sentiment Analysis</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Data Analytics</span>
+                        <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">System Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
