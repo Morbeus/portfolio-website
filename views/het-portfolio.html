@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hetansh Mehta - Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        accent: {
-                            green: '#B6D36C',
-                            orange: '#FFA500',
-                            blue: '#7DD1D1',
-                            gray: '#CCCCCC'
+                        palette: {
+                            cream: '#f1f0e2',
+                            beige: '#e4c7b7',
+                            taupe: '#bbaa91',
+                            rose: '#c39d88',
+                            copper: '#a47864',
+                            mocha: '#a28776',
+                            coffee: '#8b645a',
+                            espresso: '#56443f'
                         }
-                    }
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                    },
                 }
             }
         }
     </script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-palette-cream text-gray-800">
     <!-- Header Navigation -->
-    <header class="fixed top-0 w-full bg-white z-50 px-4 sm:px-8 py-4">
+    <header class="fixed top-0 w-full bg-palette-cream z-50 px-4 sm:px-8 py-4">
         <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-4">
-                <div class="w-8 h-8 bg-[#7DD1D1] rounded-full"></div>
+                <div class="w-8 h-8 bg-palette-mocha rounded-full"></div>
                 <div>
                     <h1 class="font-bold text-mocha-mousse">Hetansh Mehta</h1>
                     <p class="text-sm text-mocha-mousse">Data Scientist</p>
@@ -36,7 +43,7 @@
             </div>
             <nav class="flex w-full sm:w-auto justify-around sm:justify-start gap-4 sm:gap-8">
                 <a href="#resume" class="text-mocha-mousse hover:text-[#7DD1D1]">Resume</a>
-                <a href="#research" class="text-mocha-mousse hover:text-[#7DD1D1]">Research</a>
+                <a href="/projects_hetansh.html" class="text-mocha-mousse hover:text-[#7DD1D1]">Projects</a>
                 <a href="#outreach" class="text-mocha-mousse hover:text-[#7DD1D1]">Outreach</a>
                 <a href="#personal" class="text-mocha-mousse hover:text-[#7DD1D1]">Personal</a>
             </nav>
@@ -67,23 +74,23 @@
         <!-- Navigation Circles -->
         <div class="flex flex-wrap justify-center gap-4 sm:gap-8 mt-16">
             <a href="#resume" class="group">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#B6D36C] flex items-center justify-center transition-transform group-hover:scale-110">
-                    <span class="text-white font-semibold">Resume</span>
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-palette-copper flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-palette-cream font-semibold">Resume</span>
                 </div>
             </a>
-            <a href="#research" class="group">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#FFA500] flex items-center justify-center transition-transform group-hover:scale-110">
-                    <span class="text-white font-semibold">Research</span>
+            <a href="/projects_hetansh.html" class="group">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-palette-rose flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-palette-cream font-semibold">Projects</span>
                 </div>
             </a>
             <a href="#outreach" class="group">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#7DD1D1] flex items-center justify-center transition-transform group-hover:scale-110">
-                    <span class="text-white font-semibold">Outreach</span>
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-palette-mocha flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-palette-cream font-semibold">Outreach</span>
                 </div>
             </a>
             <a href="#personal" class="group">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#CCCCCC] flex items-center justify-center transition-transform group-hover:scale-110">
-                    <span class="text-white font-semibold">Personal</span>
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-palette-taupe flex items-center justify-center transition-transform group-hover:scale-110">
+                    <span class="text-palette-cream font-semibold">Personal</span>
                 </div>
             </a>
         </div>
@@ -93,7 +100,7 @@
             <h2 class="text-4xl font-bold mb-12 text-mocha-mousse">Professional Experience</h2>
             
             <!-- Role Overview -->
-            <div class="bg-white shadow-lg rounded-lg p-8 mb-12">
+            <div class="bg-palette-beige shadow-lg rounded-lg p-8 mb-12">
                 <div class="flex justify-between items-start mb-6">
                     <h3 class="text-2xl font-semibold text-mocha-mousse">Data Scientist</h3>
                     <span class="text-mocha-mousse inline-block px-4 py-1 bg-cream rounded-full">3+ Years Experience</span>
@@ -137,7 +144,7 @@
             <!-- Skills Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <!-- Technical Skills -->
-                <div class="bg-white shadow-lg rounded-lg p-4 sm:p-8">
+                <div class="bg-palette-beige shadow-lg rounded-lg p-4 sm:p-8">
                     <h4 class="text-xl font-semibold text-mocha-mousse mb-6">Technical Skills</h4>
                     <div class="flex flex-wrap gap-3">
                         <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Python</span>
@@ -151,7 +158,7 @@
                 </div>
 
                 <!-- Areas of Expertise -->
-                <div class="bg-white shadow-lg rounded-lg p-4 sm:p-8">
+                <div class="bg-palette-beige shadow-lg rounded-lg p-4 sm:p-8">
                     <h4 class="text-xl font-semibold text-mocha-mousse mb-6">Areas of Expertise</h4>
                     <div class="flex flex-wrap gap-3">
                         <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">AI Solutions</span>
