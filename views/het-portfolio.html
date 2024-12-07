@@ -25,34 +25,36 @@
 </head>
 <body class="bg-white text-gray-800">
     <!-- Header Navigation -->
-    <header class="fixed top-0 w-full bg-white z-50 px-8 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-4">
-            <div class="w-8 h-8 bg-[#7DD1D1] rounded-full"></div>
-            <div>
-                <h1 class="font-bold text-mocha-mousse">Hetansh Mehta</h1>
-                <p class="text-sm text-mocha-mousse">Data Scientist</p>
+    <header class="fixed top-0 w-full bg-white z-50 px-4 sm:px-8 py-4">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <div class="w-8 h-8 bg-[#7DD1D1] rounded-full"></div>
+                <div>
+                    <h1 class="font-bold text-mocha-mousse">Hetansh Mehta</h1>
+                    <p class="text-sm text-mocha-mousse">Data Scientist</p>
+                </div>
             </div>
+            <nav class="flex w-full sm:w-auto justify-around sm:justify-start gap-4 sm:gap-8">
+                <a href="#resume" class="text-mocha-mousse hover:text-[#7DD1D1]">Resume</a>
+                <a href="#research" class="text-mocha-mousse hover:text-[#7DD1D1]">Research</a>
+                <a href="#outreach" class="text-mocha-mousse hover:text-[#7DD1D1]">Outreach</a>
+                <a href="#personal" class="text-mocha-mousse hover:text-[#7DD1D1]">Personal</a>
+            </nav>
         </div>
-        <nav class="flex gap-8">
-            <a href="#resume" class="text-mocha-mousse hover:text-[#7DD1D1]">Resume</a>
-            <a href="#research" class="text-mocha-mousse hover:text-[#7DD1D1]">Research</a>
-            <a href="#outreach" class="text-mocha-mousse hover:text-[#7DD1D1]">Outreach</a>
-            <a href="#personal" class="text-mocha-mousse hover:text-[#7DD1D1]">Personal</a>
-        </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="pt-32 px-16 max-w-7xl mx-auto">
-        <div class="grid grid-cols-2 gap-16 items-center mb-16">
+    <main class="pt-40 sm:pt-32 px-4 sm:px-16 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-16 items-center mb-16">
             <!-- Profile Image -->
-            <div class="aspect-square rounded-full overflow-hidden">
+            <div class="aspect-square rounded-full overflow-hidden max-w-[300px] mx-auto sm:max-w-none">
                 <img src="/images/hetansh_image.jpeg" alt="Hetansh Mehta" class="w-full h-full object-cover">
             </div>
             
             <!-- Introduction -->
             <div>
-                <h1 class="text-6xl font-bold mb-8 text-mocha-mousse">Hetansh Mehta</h1>
-                <h2 class="text-2xl font-semibold mb-4 text-mocha-mousse">A Bit About Me</h2>
+                <h1 class="text-4xl sm:text-6xl font-bold mb-8 text-mocha-mousse">Hetansh Mehta</h1>
+                <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-mocha-mousse">A Bit About Me</h2>
                 <p class="text-mocha-mousse leading-relaxed">
                     I am a Data Scientist with over 3 years of experience, specializing in AI and machine learning solutions. 
                     My expertise includes developing RAG-based chatbots, implementing recommendation systems, and building 
@@ -63,31 +65,31 @@
         </div>
 
         <!-- Navigation Circles -->
-        <div class="flex justify-center gap-8 mt-16">
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-8 mt-16">
             <a href="#resume" class="group">
-                <div class="w-32 h-32 rounded-full bg-[#B6D36C] flex items-center justify-center transition-transform group-hover:scale-110">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#B6D36C] flex items-center justify-center transition-transform group-hover:scale-110">
                     <span class="text-white font-semibold">Resume</span>
                 </div>
             </a>
             <a href="#research" class="group">
-                <div class="w-32 h-32 rounded-full bg-[#FFA500] flex items-center justify-center transition-transform group-hover:scale-110">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#FFA500] flex items-center justify-center transition-transform group-hover:scale-110">
                     <span class="text-white font-semibold">Research</span>
                 </div>
             </a>
             <a href="#outreach" class="group">
-                <div class="w-32 h-32 rounded-full bg-[#7DD1D1] flex items-center justify-center transition-transform group-hover:scale-110">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#7DD1D1] flex items-center justify-center transition-transform group-hover:scale-110">
                     <span class="text-white font-semibold">Outreach</span>
                 </div>
             </a>
             <a href="#personal" class="group">
-                <div class="w-32 h-32 rounded-full bg-[#CCCCCC] flex items-center justify-center transition-transform group-hover:scale-110">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-[#CCCCCC] flex items-center justify-center transition-transform group-hover:scale-110">
                     <span class="text-white font-semibold">Personal</span>
                 </div>
             </a>
         </div>
 
         <!-- Resume Section -->
-        <section id="resume" class="mt-32 max-w-4xl mx-auto">
+        <section id="resume" class="mt-24 sm:mt-32 max-w-4xl mx-auto">
             <h2 class="text-4xl font-bold mb-12 text-mocha-mousse">Professional Experience</h2>
             
             <!-- Role Overview -->
@@ -133,9 +135,9 @@
             </div>
 
             <!-- Skills Grid -->
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <!-- Technical Skills -->
-                <div class="bg-white shadow-lg rounded-lg p-8">
+                <div class="bg-white shadow-lg rounded-lg p-4 sm:p-8">
                     <h4 class="text-xl font-semibold text-mocha-mousse mb-6">Technical Skills</h4>
                     <div class="flex flex-wrap gap-3">
                         <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">Python</span>
@@ -149,7 +151,7 @@
                 </div>
 
                 <!-- Areas of Expertise -->
-                <div class="bg-white shadow-lg rounded-lg p-8">
+                <div class="bg-white shadow-lg rounded-lg p-4 sm:p-8">
                     <h4 class="text-xl font-semibold text-mocha-mousse mb-6">Areas of Expertise</h4>
                     <div class="flex flex-wrap gap-3">
                         <span class="px-4 py-2 bg-cream text-mocha-mousse rounded-full">AI Solutions</span>
