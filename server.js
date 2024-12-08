@@ -32,6 +32,11 @@ app.get('/chait-portfolio/:name', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/chait-portfolio.html'));
 });
 
+// Add route for client portfolio
+app.get('/client-portfolio', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'client-portfolio.html'));
+});
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
