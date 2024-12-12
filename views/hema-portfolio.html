@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemani Nainesh Shah - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        palette: {
+                            cream: '#f1f0e2',
+                            beige: '#e4c7b7',
+                            taupe: '#bbaa91',
+                            rose: '#c39d88',
+                            copper: '#a47864',
+                            mocha: '#a28776',
+                            coffee: '#8b645a',
+                            espresso: '#56443f'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-palette-cream text-gray-800">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 w-full bg-palette-cream z-50 px-4 sm:px-8 py-4">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <div class="w-8 h-8 bg-palette-mocha rounded-full"></div>
+                <div>
+                    <h1 class="font-bold text-palette-espresso">Hemani Shah</h1>
+                    <p class="text-sm text-palette-espresso">Data Scientist</p>
+                </div>
+            </div>
+            <nav class="flex w-full sm:w-auto justify-around sm:justify-start gap-4 sm:gap-8">
+                <a href="#resume" class="text-palette-espresso hover:text-palette-copper">Resume</a>
+                <a href="#projects" class="text-palette-espresso hover:text-palette-copper">Projects</a>
+                <a href="#contact" class="text-palette-espresso hover:text-palette-copper">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 px-4 sm:px-16">
+        <!-- Introduction -->
+        <div class="max-w-4xl mx-auto mb-16">
+            <h1 class="text-4xl sm:text-6xl font-bold mb-8 text-palette-espresso">Hemani Nainesh Shah</h1>
+            <div class="flex flex-wrap gap-4 mb-8">
+                <span class="flex items-center gap-2 text-palette-coffee">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                    Valsad, Gujarat
+                </span>
+                <a href="mailto:hemanishah00@gmail.com" class="text-palette-coffee hover:text-palette-copper">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                        hemanishah00@gmail.com
+                    </span>
+                </a>
+                <span class="flex items-center gap-2 text-palette-coffee">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    +919924475599
+                </span>
+            </div>
+            <p class="text-palette-coffee leading-relaxed">
+                Data Scientist with expertise in developing end-to-end AI solutions, including virtual assistants, 
+                multilingual speech processing, and computer vision applications. Experienced in implementing 
+                advanced ML pipelines and optimizing AI models for production environments.
+            </p>
+        </div>
+
+        <!-- Experience Section -->
+        <section id="resume" class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-palette-espresso">Work Experience</h2>
+            
+            <!-- ARThink AI -->
+            <div class="bg-palette-beige rounded-lg p-6 mb-8">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-palette-espresso">Data Scientist</h3>
+                        <p class="text-palette-coffee">ARThink AI</p>
+                    </div>
+                    <span class="text-palette-coffee">08/2023 - 07/2024</span>
+                </div>
+                <ul class="space-y-3 text-palette-coffee">
+                    <li class="flex gap-2">
+                        <span class="text-palette-copper">•</span>
+                        <span>Implemented end-to-end virtual assistant pipeline with speech-to-text, RAG and text-to-speech</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-palette-copper">•</span>
+                        <span>Set up pipeline to finetune Vision Language Model using quantization and LoRA</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-palette-copper">•</span>
+                        <span>Created POC for attendance management using facial recognition</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- DeetsDigital -->
+            <div class="bg-palette-beige rounded-lg p-6 mb-8">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-palette-espresso">Data Science Trainee</h3>
+                        <p class="text-palette-coffee">DeetsDigital</p>
+                    </div>
+                    <span class="text-palette-coffee">02/2023 - 07/2023</span>
+                </div>
+                <ul class="space-y-3 text-palette-coffee">
+                    <li class="flex gap-2">
+                        <span class="text-palette-copper">•</span>
+                        <span>Implemented Super Resolution for drone image quality enhancement</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-palette-copper">•</span>
+                        <span>Created POC for sentiment analysis on human facial data using CCTV footage</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-palette-espresso">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- EDAA Project -->
+                <div class="bg-palette-beige rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-palette-espresso mb-4">EDAA: Emotion Detection And Analysis</h3>
+                    <p class="text-palette-coffee mb-4">
+                        Web app for analyzing audience reactions through facial expressions and speech context, 
+                        helping public speakers improve their presentations.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full text-sm">Computer Vision</span>
+                        <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full text-sm">NLP</span>
+                    </div>
+                </div>
+
+                <!-- PharmaBot -->
+                <div class="bg-palette-beige rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-palette-espresso mb-4">PharmaBot</h3>
+                    <p class="text-palette-coffee mb-4">
+                        Interactive bot using IBS, ASR, RAG, and LLM for customer service in pharmaceutical domain.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full text-sm">RAG</span>
+                        <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full text-sm">LLM</span>
+                        <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full text-sm">ASR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-palette-espresso">Technical Skills</h2>
+            <div class="bg-palette-beige rounded-lg p-6">
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">Python</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">Machine Learning</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">Deep Learning</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">Tensorflow</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">Keras</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">Computer Vision</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">RAG</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">LLM</span>
+                    <span class="px-4 py-2 bg-palette-cream text-palette-coffee rounded-full">OpenAI</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="max-w-4xl mx-auto mb-16">
+            <div class="bg-palette-taupe rounded-lg p-8 text-center">
+                <h2 class="text-2xl font-bold mb-4 text-palette-cream">Let's Connect</h2>
+                <div class="flex justify-center gap-6">
+                    <a href="https://linkedin.com" class="text-palette-cream hover:text-palette-beige">LinkedIn</a>
+                    <a href="https://github.com" class="text-palette-cream hover:text-palette-beige">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
