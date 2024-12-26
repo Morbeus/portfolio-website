@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemani Shah - Projects</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        palette: {
+                            cream: '#f1f0e2',
+                            beige: '#e4c7b7',
+                            taupe: '#bbaa91',
+                            rose: '#c39d88',
+                            copper: '#a47864',
+                            mocha: '#a28776',
+                            coffee: '#8b645a',
+                            espresso: '#56443f'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-palette-cream text-gray-800">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 w-full bg-palette-cream z-50 px-4 sm:px-8 py-4">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-8 h-8 bg-palette-mocha rounded-full"></div>
+                    <div>
+                        <h1 class="font-bold text-palette-espresso">Hemani Shah</h1>
+                        <p class="text-sm text-palette-espresso">Data Scientist</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="flex w-full sm:w-auto justify-around sm:justify-start gap-4 sm:gap-8">
+                <a href="/" class="text-palette-espresso hover:text-palette-copper">Home</a>
+                <a href="#" class="text-palette-copper">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 px-4 sm:px-16 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-12 text-palette-espresso">Projects Portfolio</h1>
+        
+        <!-- Project Categories -->
+        <div class="space-y-6 mb-16">
+            <!-- Analytics Projects -->
+            <div class="border border-palette-taupe rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 bg-palette-beige flex justify-between items-center" 
+                        onclick="toggleCategory('analytics')">
+                    <h2 class="text-2xl font-bold text-palette-espresso">Analytics</h2>
+                    <svg class="w-6 h-6 transform transition-transform" id="analytics-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden" id="analytics-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                        <!-- Analytics Project Card -->
+                        <div class="border border-palette-taupe rounded-lg overflow-hidden">
+                            <img src="/images/deepdive_housing.jpeg" alt="Housing Analysis Project" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-palette-espresso mb-2">Deep Dive of housing in India</h3>
+                                <p class="text-sm text-gray-600 mb-4">In this project, we delve into Indian housing data, looking at the 2011 Indian Housing Census Data as well as house data from Indias metropolite cities...</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-2 py-1 bg-palette-beige rounded-full text-xs">Data Analytics</span>
+                                    <span class="px-2 py-1 bg-palette-beige rounded-full text-xs">Data Visualization</span>
+                                    <span class="px-2 py-1 bg-palette-beige rounded-full text-xs">KNN</span>
+                                    <span class="px-2 py-1 bg-palette-beige rounded-full text-xs">Linear Regression</span>
+                                    <span class="px-2 py-1 bg-palette-beige rounded-full text-xs">Neural Network</span>
+                                    <span class="px-2 py-1 bg-palette-beige rounded-full text-xs">Random Forest</span>
+                                </div>
+                                <a href="https://github.com/hemanishah00/DS2Project" 
+                                   target="_blank"
+                                   class="inline-block px-4 py-2 bg-palette-mocha text-white rounded hover:bg-palette-coffee transition-colors">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer Vision Projects -->
+            <div class="border border-palette-taupe rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 bg-palette-beige flex justify-between items-center"
+                        onclick="toggleCategory('cv')">
+                    <h2 class="text-2xl font-bold text-palette-espresso">Computer Vision</h2>
+                    <svg class="w-6 h-6 transform transition-transform" id="cv-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden" id="cv-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                        <!-- Project cards will go here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Generative AI Projects -->
+            <div class="border border-palette-taupe rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 bg-palette-beige flex justify-between items-center"
+                        onclick="toggleCategory('genai')">
+                    <h2 class="text-2xl font-bold text-palette-espresso">Generative AI</h2>
+                    <svg class="w-6 h-6 transform transition-transform" id="genai-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden" id="genai-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                        <!-- Project cards will go here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- OCR Projects -->
+            <div class="border border-palette-taupe rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 bg-palette-beige flex justify-between items-center"
+                        onclick="toggleCategory('ocr')">
+                    <h2 class="text-2xl font-bold text-palette-espresso">OCR</h2>
+                    <svg class="w-6 h-6 transform transition-transform" id="ocr-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden" id="ocr-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                        <!-- Project cards will go here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendation System Projects -->
+            <div class="border border-palette-taupe rounded-lg overflow-hidden">
+                <button class="w-full px-6 py-4 bg-palette-beige flex justify-between items-center"
+                        onclick="toggleCategory('recsys')">
+                    <h2 class="text-2xl font-bold text-palette-espresso">Recommendation System</h2>
+                    <svg class="w-6 h-6 transform transition-transform" id="recsys-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden" id="recsys-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                        <!-- Project cards will go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same script as before -->
+    <script>
+        function toggleCategory(category) {
+            const content = document.getElementById(`${category}-content`);
+            const icon = document.getElementById(`${category}-icon`);
+            
+            // Close all other categories
+            document.querySelectorAll('[id$="-content"]').forEach(elem => {
+                if (elem.id !== `${category}-content`) {
+                    elem.classList.add('hidden');
+                }
+            });
+            document.querySelectorAll('[id$="-icon"]').forEach(elem => {
+                if (elem.id !== `${category}-icon`) {
+                    elem.classList.remove('rotate-180');
+                }
+            });
+
+            // Toggle selected category
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+</body>
+</html> 
