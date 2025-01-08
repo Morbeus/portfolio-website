@@ -22,9 +22,9 @@ app.get('/hema-portfolio', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/hema-portfolio.html'));
 });
 
-app.get('/panda-portfolio/', (req, res) => {
+app.get('/rashmi-portfolio/', (req, res) => {
     // You can create different portfolio pages for different friends
-    res.sendFile(path.join(__dirname, 'views/panda-portfolio.html'));
+    res.sendFile(path.join(__dirname, 'views/rashmi-portfolio.html'));
 });
 
 app.get('/chait-portfolio/:name', (req, res) => {
