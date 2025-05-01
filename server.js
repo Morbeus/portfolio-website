@@ -17,9 +17,9 @@ app.get('/het-portfolio', (req, res) => {
 });
 
 // Friend's portfolio
-app.get('/hema-portfolio', (req, res) => {
+app.get('/hemani-portfolio', (req, res) => {
     // You can create different portfolio pages for different friends
-    res.sendFile(path.join(__dirname, 'views/hema-portfolio.html'));
+    res.sendFile(path.join(__dirname, 'views/hemani-portfolio.html'));
 });
 
 app.get('/rashmi-portfolio/', (req, res) => {
