@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hema Naidu - Full Stack Web Developer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        palette: {
+                            cream: '#f1f0e2',
+                            beige: '#e4c7b7',
+                            taupe: '#bbaa91',
+                            rose: '#c39d88',
+                            copper: '#a47864',
+                            mocha: '#a28776',
+                            coffee: '#8b645a',
+                            espresso: '#56443f'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-palette-cream text-gray-800">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 w-full bg-palette-cream z-50 px-4 sm:px-8 py-4">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <div class="w-8 h-8 bg-palette-mocha rounded-full"></div>
+                <div>
+                    <h1 class="font-bold text-mocha-mousse">Hema Naidu</h1>
+                    <p class="text-sm text-mocha-mousse">Full Stack Web Developer</p>
+                </div>
+            </div>
+            <nav class="flex w-full sm:w-auto justify-around sm:justify-start gap-4 sm:gap-8">
+                <a href="#about" class="text-mocha-mousse hover:text-palette-copper">About</a>
+                <a href="#experience" class="text-mocha-mousse hover:text-palette-copper">Experience</a>
+                <a href="#skills" class="text-mocha-mousse hover:text-palette-copper">Skills</a>
+                <a href="#education" class="text-mocha-mousse hover:text-palette-copper">Education</a>
+                <a href="#certifications" class="text-mocha-mousse hover:text-palette-copper">Certifications</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-40 sm:pt-32 px-4 sm:px-16 max-w-7xl mx-auto">
+        <!-- Hero Section -->
+        <section id="home" class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-16 items-center mb-16">
+            <div class="text-center sm:text-left">
+                <h1 class="text-4xl sm:text-6xl font-bold mb-4 text-palette-coffee">Hema Naidu</h1>
+                <p class="text-xl text-palette-copper mb-8">Full Stack Web Developer</p>
+                <div class="bg-palette-beige p-4 rounded-lg mb-4">
+                    <p class="text-palette-coffee leading-relaxed">
+                        Dynamic and detail-oriented Full Stack Web Developer with nearly a year of experience in building and maintaining responsive web applications. Proficient in Angular and Spring Boot, with a solid background in both frontend and backend development. Demonstrated ability to deliver projects on time, collaborate effectively, and troubleshoot complex technical issues. Committed to continuous improvement and staying current with industry trends and technologies.
+                    </p>
+                </div>
+            </div>
+            <div class="hidden sm:block">
+                <div class="relative w-72 h-72 mx-auto rounded-full flex items-center justify-center bg-palette-copper shadow-lg">
+                    <img src="/images/Hema.jpeg" alt="Hema Naidu" class="w-68 h-68 object-cover rounded-full border-6 border-white shadow-md" style="background: #f1f0e2;" />
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="my-24">
+            <h2 class="text-3xl font-bold mb-8 text-palette-coffee">About Me</h2>
+            <div class="bg-palette-beige rounded-lg p-8">
+                <p class="text-palette-coffee leading-relaxed">
+                    Dynamic and detail-oriented Full Stack Web Developer with nearly a year of experience in building and maintaining responsive web applications. Proficient in Angular and Spring Boot, with a solid background in both frontend and backend development. Demonstrated ability to deliver projects on time, collaborate effectively, and troubleshoot complex technical issues. Committed to continuous improvement and staying current with industry trends and technologies.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="my-24">
+            <h2 class="text-3xl font-bold mb-8 text-palette-coffee">Experience</h2>
+            <div class="space-y-6">
+                <div class="bg-palette-beige rounded-lg p-8">
+                    <h3 class="text-xl font-bold text-palette-coffee">Associate Engineer – GDP (Global Delivery Portal)</h3>
+                    <div class="text-sm text-palette-copper mb-4">2024 – Present</div>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-palette-copper">•</span>
+                            <span class="text-palette-coffee">Developed and maintained web applications using Angular and Spring Boot.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-palette-copper">•</span>
+                            <span class="text-palette-coffee">Implemented and managed database schemas, performed complex SQL queries.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-palette-copper">•</span>
+                            <span class="text-palette-coffee">Used Git for version control, collaborated through code reviews and pull requests.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-palette-copper">•</span>
+                            <span class="text-palette-coffee">Diagnosed and resolved technical issues to ensure application reliability.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="my-24">
+            <h2 class="text-3xl font-bold mb-8 text-palette-coffee">Skills</h2>
+            <div class="bg-palette-beige rounded-lg p-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-palette-coffee font-medium">Frontend</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">React</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">Angular</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">HTML</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">CSS</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-palette-coffee font-medium">Backend</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">Java (Core, Spring Boot, Servlets)</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">Golang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-palette-coffee font-medium">Database</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">MySQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-palette-coffee font-medium">Others</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">AWS</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">C</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">C++</span>
+                                <span class="px-3 py-1 bg-palette-cream text-palette-coffee rounded-full">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="my-24">
+            <h2 class="text-3xl font-bold mb-8 text-palette-coffee">Education</h2>
+            <div class="space-y-6">
+                <div class="bg-palette-beige rounded-lg p-8">
+                    <h3 class="text-xl font-bold text-palette-coffee">Bachelor of Engineering</h3>
+                    <div class="text-palette-copper font-medium">Vidya Vardhaka College of Engineering</div>
+                    <div class="text-sm text-palette-copper">2019 – 2023 &nbsp; | &nbsp; GPA: 8.9 / 10.0</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="my-24">
+            <h2 class="text-3xl font-bold mb-8 text-palette-coffee">Certifications</h2>
+            <div class="bg-palette-beige rounded-lg p-8">
+                <ul class="list-disc pl-6 text-palette-coffee space-y-2">
+                    <li>Full-Stack Java Development with Spring Boot 3 React</li>
+                    <li>Angular</li>
+                    <li>Generative AI for Beginners</li>
+                    <li>Go: The Complete Developer's Guide (Golang)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
